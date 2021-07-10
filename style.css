@@ -1,0 +1,378 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/*Header*/
+nav {
+  display: flex;
+  justify-content: space-around;
+  min-height: 10vh;
+  width: 100%;
+  background-color: rgb(204, 203, 203);
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+}
+.home {
+  align-items: center;
+}
+.home a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.home:hover {
+  text-decoration: underline;
+}
+.nav-links {
+  display: flex;
+  width: 35%;
+  justify-content: space-around;
+  transition: all 0.5s ease-in;
+}
+.nav-links li {
+  list-style: none;
+  font-size: 1rem;
+}
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px;
+  border-radius: 100px;
+  font-weight: bold;
+}
+.burger {
+  display: none;
+  cursor: pointer;
+}
+.nav-links :hover {
+  text-decoration: underline;
+}
+
+/* nav header  */
+.header-sect {
+  padding-top: 10vh;
+  font-size: 2.8rem;
+  text-align: center;
+  text-decoration: underline;
+  letter-spacing: 2px;
+}
+
+/* main */
+main {
+  background-color: rgb(243, 243, 243);
+}
+
+/* home page section */
+.home-page {
+  display: flex;
+  min-height: 100vh;
+  width: 90%;
+  margin: auto;
+}
+.presentation {
+  font-size: 2rem;
+  margin: auto;
+}
+.socmed {
+  margin-top: 10vh;
+}
+.socmed img:hover {
+  transform: rotate(20deg);
+}
+.instagram,
+.twitter,
+.github {
+  height: 5vh;
+  cursor: pointer;
+  padding: 0 2px 0 2px;
+}
+.my-photo {
+  padding: 20vh;
+}
+.my-photo img {
+  height: 63vh;
+  border-radius: 100px;
+}
+.my-photo img {
+  height: 30rem;
+  border-radius: 100px;
+}
+
+/* about section  */
+.about-sect {
+  height: 100vh;
+}
+.about-sect .content {
+  display: flex;
+}
+.photo {
+  margin: 10vh 0 0 20vh;
+}
+.about-me {
+  margin: 20vh;
+}
+.about-me .name {
+  text-decoration: underline;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.about-me p {
+  font-size: 1.3rem;
+}
+
+/* educations section  */
+.educations-sect {
+  height: 100vh;
+}
+.educations-sect h2 {
+  text-align: center;
+  margin: 20px;
+  font-size: 2rem;
+}
+.educations-sect .container {
+  display: flex;
+}
+.container li {
+  list-style: none;
+}
+.container .year {
+  width: 50%;
+  text-align: center;
+}
+.year .year-list li {
+  font-size: 2rem;
+  margin-bottom: 10vh;
+}
+.school-list li {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.school-list p {
+  margin-bottom: 5vh;
+  font-size: 1.3rem;
+}
+.school-list .shs {
+  margin-bottom: 10vh;
+}
+/* skills section  */
+.skills-sect {
+  height: 100vh;
+}
+.skills-sect h2 {
+  text-align: center;
+  margin-top: 10vh;
+}
+.skills-sect .container {
+  width: 600px;
+  margin: 5vh auto 0;
+  padding: 20px;
+}
+.skills-sect .container li {
+  position: relative;
+  list-style: none;
+  margin: 50px 0;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.skills-sect .container li:before {
+  content: "";
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background-color: rgb(121, 100, 100);
+  border-radius: 1000px;
+}
+
+.skills-sect .container li:after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 0;
+  height: 20px;
+  background-color: rgb(27, 24, 24);
+  border-radius: 1000px;
+}
+.skills-sect .container .C:after {
+  width: 85%;
+}
+.skills-sect .container .Cpp:after {
+  width: 80%;
+}
+.skills-sect .container .math:after {
+  width: 85%;
+}
+
+/* experience section  */
+.experience-sect {
+  height: 100vh;
+}
+.experience-sect h2 {
+  text-align: center;
+  padding: 4rem;
+}
+.exp-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3rem;
+}
+.exp-container ul {
+  list-style: none;
+}
+.year-xp {
+  padding-left: 6rem;
+}
+.year-list-xp {
+  font-size: 2.5rem;
+}
+.year-list-xp li {
+  margin-bottom: 2.5rem;
+}
+.exp-list {
+  padding-left: 4rem;
+}
+.exp-list li {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.exp-list p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* respponsive section */
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 60%;
+  }
+  /* home section  */
+  .home-page {
+    flex-direction: column;
+  }
+  .home-page .presentation {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 100px;
+  }
+  .home-page .socmed {
+    margin-top: 30px;
+  }
+  .my-photo {
+    padding: 0%;
+    margin: auto;
+  }
+  .my-photo img {
+    height: 40vh;
+  }
+  /* about section */
+  .about-sect .content {
+    flex-direction: column;
+    margin: 0;
+  }
+  .photo img {
+    height: 40vh;
+  }
+  .photo {
+    margin: 15px auto;
+  }
+  .about-me {
+    margin: 10px;
+    text-align: center;
+  }
+  .about-me .name {
+    font-size: 1 rem;
+  }
+  .about-me p {
+    font-size: 1rem;
+  }
+
+  /* experience section  */
+  .year-xp {
+    padding-left: 0px;
+  }
+  .year-list-xp li {
+    font-size: 2rem;
+  }
+  .exp-list li {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* nav responsive */
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 90vh;
+    top: 10vh;
+    width: 50%;
+    background-color: rgb(204, 203, 203);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .burger {
+    display: block;
+  }
+  /* education section  */
+  .educations-sect h2 {
+    margin-bottom: 2rem;
+  }
+  .school-list li {
+    font-size: 1.4rem;
+  }
+  .school-list p {
+    font-size: 1rem;
+  }
+  .year .year-list li {
+    font-size: 1.5rem;
+  }
+
+  /* experience section  */
+  .exp-list li {
+    font-size: 1.3rem;
+  }
+  .exp-list p {
+    font-size: 1rem;
+  }
+  .year-list li {
+    font-size: 1.3rem;
+  }
+
+  /* skill section  */
+  .skills-sect .container {
+    width: 400px;
+  }
+}
+.nav-active {
+  transform: translateX(0%);
+}
